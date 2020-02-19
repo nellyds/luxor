@@ -32,7 +32,6 @@ const routes = [
     name: "Services",
     component: Services
   }
-
 ];
 
 const router = new VueRouter({
