@@ -4,10 +4,6 @@
       align="center"
       justify="center"
     >
-    <Profile v-bind:image="image" />
-        <Profile v-bind:image="image" />
-            <Profile v-bind:image="image" />
-    
     </v-row>
     <v-card
      v-for="about in aboutContent"
@@ -16,10 +12,7 @@
     max-width="434"
     tile
   >
-    <v-img
-      height="100%"
-      src="@/assets/bulbs.jpg"
-    >
+
       <v-row
         align="end"
         class="fill-height"
@@ -40,29 +33,28 @@
         </v-col>
         <v-col class="py-0">
           <v-list-item
-            color="rgba(0, 0, 0, .4)"
-            dark
+            color="black"
+            
           >
             <v-list-item-content>
               <v-list-item-title class="title">{{about.name}}</v-list-item-title>
               <v-list-item-subtitle>{{about.role}}</v-list-item-subtitle>
               <v-list-item-title class="title">{{about.E}}</v-list-item-title>
               <v-list-item-title class="title">{{about.M}}</v-list-item-title>
-              <v-list-item-title class="title">{{about.linkedin}}</v-list-item-title>
+              <a v-bind:href=about.linkedin ><i style="font-size:24px;color:rgb(0,0,0)" class="fa">&#xf08c;</i></a>
             </v-list-item-content>
           </v-list-item>
         </v-col>
       </v-row>
-    </v-img>
+
   </v-card>
   </div>
 </template>
 <script>
-import Profile from "@/components/Profile"
 export default {
   name: 'about',
   components:{
-    Profile
+
   },
   data(){
     return {
@@ -77,3 +69,6 @@ export default {
   }
 }
 </script>
+<style scoped>
+
+</style>

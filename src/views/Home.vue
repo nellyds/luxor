@@ -56,7 +56,7 @@
   </v-jumbotron>
 
 <Timeline />
-  <Case />
+  <Case class="chartHolder" />
        </div>
   </v-container>
   </div>
@@ -94,14 +94,14 @@ export default {
 body{
   margin: auto;
 }
+.chartHolder{
+  margin: auto;
+  width: 600px;
+}
 .timeLine{
-
 }
 .introDiv{
-
   background-image: url("https://i.imgur.com/M2Q4rh9.jpg");
-  
-  
 }
 </style>
 

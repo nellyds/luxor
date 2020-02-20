@@ -32,7 +32,7 @@
             right
             top
           >
-            <v-icon>mdi-cart</v-icon>
+            <v-icon><a href=linkedin class="fa fa-facebook"></a></v-icon>
           </v-btn>
           <div class="font-weight-light grey--text title mb-2">{{name}}</div>
           <h3 class="display-1 font-weight-light orange--text mb-2">{{role}}</h3>

@@ -34,7 +34,7 @@ const datasets = {
     label: 'Existing Wattage',
     borderColor: 'rgba(50, 115, 220, 0.5)',
     backgroundColor: 'rgba(50, 115, 220, 0.1)',
-    data: [458, 285, 128, 366, 224, 192]
+    data: [458, 285, 128, 366, 224, 192, 212]
   },
   2018: {
     label: 'Typical Replacement Wattage',
@@ -48,7 +48,7 @@ const options = {
     yAxes: [{
       ticks: {
         beginAtZero: true,
-        callback: value => numeral(value).format('$0,0')
+        callback: value => numeral(value).format('0.0')
       }
     }]
   },
@@ -57,7 +57,7 @@ const options = {
     callbacks: {
       label(tooltipItem, data) {
         const label = data.datasets[tooltipItem.datasetIndex].label;
-        const value = numeral(tooltipItem.yLabel).format('$0,0');
+        const value = numeral(tooltipItem.yLabel);
         return `${label}: ${value}`;
       }
     }

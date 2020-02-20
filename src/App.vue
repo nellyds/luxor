@@ -12,12 +12,6 @@
       align="center"
       justify="center"
     >
- 
-    <v-img
-      class="shrink"
-      max-width="1em"
-      src="@/assets/LUXORby-01.jpg" 
-    />
     <router-link class="linkText" to="/">Home</router-link>
     <router-link class="linkText" to="/about">About Us</router-link>
     <router-link class="linkText" to="/services">Our Services</router-link>
@@ -26,14 +20,16 @@
    </v-row>
 
   </v-app-bar>
+  <v-container class="topSpace" />
+
 <router-view></router-view>
 <Lower />
         <v-footer app
-        color=white
+        color=black
         >
               <v-divider></v-divider>
           <v-card-text>
-      <span class="footerText">Nelson D'Silva &copy; 2020</span>
+      <span class="footerText"><a href="www.nelson-dsilva.com" >Nelson D'Silva &copy; 2020</a></span>
           </v-card-text>
     </v-footer>
   </v-app>
@@ -52,9 +48,37 @@ export default {
 };
 </script>
 <style scoped>
+.topSpace{
+padding-top: 10px;
+  height: 2em;
+
+}
 .linkText{
   color: black;
   text-decoration: none;
+  padding: 1em;
+  font-size: 1.2em;
+}
+a{
+  text-decoration: none;
+
+  
+}
+a:visited{
+  text-decoration: none;
+
+}
+.footerText{
+ 
+   text-decoration-color: white;
+
+  color: white;
+  text-decoration: none;
+
+
+
+
+
 }
 .lowerDivide{
   min-width: 100%;

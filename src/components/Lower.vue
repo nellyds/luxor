@@ -3,11 +3,11 @@
    
      <v-bottom-navigation
     v-model="bottomNav"
-    dark
+    background-color="black"
     shift
   >
     <v-btn>
-<i style="font-size:24px;color:rgb(100,100,200)" class="fa">&#xf08c;</i>
+<i style="font-size:24px;color:rgb(255,255,255)" class="fa">&#xf08c;</i>
     </v-btn>
 
 
@@ -26,6 +26,7 @@ export default {
 </script>
 <style scoped>
 .Lower{
-    min-height: 400px;
+    min-height: 150px;
+    background-color:black;
 }
 </style>
