@@ -6,8 +6,8 @@
         max-width="600"
       >
         <v-img
-          :aspect-ratio="16/9"
-          src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
+          :aspect-ratio="9/9"
+          :src="image"
         >
           <v-expand-transition>
             <div
@@ -15,7 +15,7 @@
               class="d-flex transition-fast-in-fast-out black darken-2 v-card--reveal display-3 white--text"
               style="height: 100%;"
             >
-              $14.99
+              {{bio}}
             </div>
           </v-expand-transition>
         </v-img>
@@ -34,12 +34,11 @@
           >
             <v-icon>mdi-cart</v-icon>
           </v-btn>
-          <div class="font-weight-light grey--text title mb-2">For the perfect meal</div>
-          <h3 class="display-1 font-weight-light orange--text mb-2">QW cooking utensils</h3>
-          <div class="font-weight-light title mb-2">
-            Our Vintage kitchen utensils delight any chef.<br>
-            Made of bamboo by hand
-          </div>
+          <div class="font-weight-light grey--text title mb-2">{{name}}</div>
+          <h3 class="display-1 font-weight-light orange--text mb-2">{{role}}</h3>
+          <v-divider />
+          {{E}}
+          {{M}}
         </v-card-text>
       </v-card>
     </v-hover>
@@ -68,10 +67,7 @@ export default {
         type: String
     }
 }
-
-
 }
-
 </script>
 <style>
 .v-card--reveal {

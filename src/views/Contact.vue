@@ -1,15 +1,17 @@
 <template>
-  <div class="home">
-this will have a contact form
-   
+  <div class="Contact">
+<Form />
   </div>
   
 </template>
 
 <script>
-
+import Form from "@/components/Form"
 export default {
-  name: "Contact",
 
+  name: "Contact",
+  components: {
+      Form
+  } 
 };
 </script>
