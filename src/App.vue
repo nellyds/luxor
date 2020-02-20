@@ -29,7 +29,7 @@
         >
               <v-divider></v-divider>
           <v-card-text>
-      <span class="footerText"><a href="www.nelson-dsilva.com" >Nelson D'Silva &copy; 2020</a></span>
+      <span class="footerText"><a href="http://www.nelson-dsilva.com" >Nelson D'Silva &copy; 2020</a></span>
           </v-card-text>
     </v-footer>
   </v-app>
