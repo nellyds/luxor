@@ -19,7 +19,7 @@
     <line-chart
       :width="500"
       :height="300"
-      :labels="['400W Metal Hyde', '250W Metal Hyde', '2x4 Troffer', '2x2 Troffer', '6-Lamp T5', '4-Lamp T5', '6-Lamp T5']"
+      :labels="['400W Metal Halide', '250W Metal Halide', '2x4 Troffer', '2x2 Troffer', '6-Lamp T5', '4-Lamp T5', '6-Lamp T5']"
       :datasets="displayedDatasets"
       :options="$options.options"
     ></line-chart>
