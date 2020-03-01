@@ -1,5 +1,18 @@
 <template>
   <div class="about">
+        <v-container fill-height>
+      <v-layout align-center>
+        <v-flex>
+              <v-row
+      align="center"
+      justify="center"
+    >
+          <v-img src="@/assets/LUXOR.jpg" :max-width=400 :aspect-ratio="16/16"/>
+              </v-row>
+                    <v-divider class="my-3"></v-divider>
+        </v-flex>
+      </v-layout>
+    </v-container>
      <v-row
       align="center"
       justify="center"
@@ -22,14 +35,14 @@
           class="pa-0"
           cols="12"
         >
-          <v-avatar
+          <!-- <v-avatar
             class="profile"
             color="grey"
             size="164"
             tile
           >
            
-          </v-avatar>
+          </v-avatar> -->
         </v-col>
         <v-col class="py-0">
           <v-list-item
