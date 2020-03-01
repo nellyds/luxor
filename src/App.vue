@@ -14,8 +14,6 @@
     >
     <router-link class="linkText" to="/">Home</router-link>
     <router-link class="linkText" to="/about">About Us</router-link>
-    <router-link class="linkText" to="/services">Our Services</router-link>
-    <router-link class="linkText" to="/contact">Contact</router-link>
 
    </v-row>
 
