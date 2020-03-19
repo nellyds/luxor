@@ -1,25 +1,29 @@
 <template>
 <v-container class="timeLine">
-  <v-timeline>
+  <v-timeline           align-top
+      dense class="timeLineContainer">
     <v-timeline-item
+
       v-for="step in processSteps"
       :key="step"
+      data-aos="fade-down" data-aos-duration="1000"
       color="yellow lighten-2"
       large
       fill-dot
-    >
-                
+    >                
               <v-hover
                     v-slot:default="{ hover }"
                     open-delay="200"
                   >
+                  <div data-aos="fade-up" data-aos-duration="1000">
                     <v-card
                       :elevation="hover ? 16 : 2"
                       >
-                    <v-card-text>
+                    <v-card-text >
                       {{step.description}}
                     </v-card-text>
                   </v-card>
+                  </div>
                 </v-hover>
                 </v-timeline-item>
               </v-timeline>
@@ -46,3 +50,16 @@ export default {
 }
 
 </script>
+<style scoped>
+.timeLine{
+  max-width: 80vw;
+  height: auto;
+  align-content: center;
+}
+.timeLineContainer{
+    max-width: 1000px;
+  height: auto;
+  align-content: center;
+  margin: auto;
+}
+</style>

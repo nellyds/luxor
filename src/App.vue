@@ -1,23 +1,5 @@
 <template>
   <v-app>
-      <!-- <v-app-bar
-    v-scroll="onScroll"
-    :color="!isScrolling ? 'white' : 'rgba(255, 255, 255, 0)'"
-    :hide-on-scroll="$vuetify.breakpoint.smAndDown"
-    app
-  
-    elevate-on-scroll
-  >
-   <v-row
-      align="center"
-      justify="center"
-    >
-    <router-link class="linkText" to="/">Home</router-link>
-    <router-link class="linkText" to="/about">About Us</router-link>
-
-   </v-row>
-
-  </v-app-bar> -->
   <NavBar />
   <v-container class="topSpace" />
 

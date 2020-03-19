@@ -11,6 +11,7 @@
     <v-spacer />
     <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">
       <v-btn
+      class="links"
       :color="!isScrolling ? 'black' : 'white'"
         v-for="(item, i) in items"
         :key="i"
@@ -38,20 +39,13 @@
             active-class="black--text text--accent-4"
           >
             <v-list-item>
-              <v-list-item-title>Linke to another section</v-list-item-title>
+              <router-link to="/about">About  </router-link>
             </v-list-item>
   
             <v-list-item>
-              <v-list-item-title>Link to another section</v-list-item-title>
+              <router-link to="/">Home  </router-link>
             </v-list-item>
   
-            <v-list-item>
-              <v-list-item-title>Linke to another section</v-list-item-title>
-            </v-list-item>
-  
-            <v-list-item>
-              <v-list-item-title>Linke to another section</v-list-item-title>
-            </v-list-item>
           </v-list-item-group>
         </v-list>
       </v-navigation-drawer>
@@ -94,3 +88,12 @@
     }
   }
 </script>
+<style scoped>
+.links{
+    align-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+</style>

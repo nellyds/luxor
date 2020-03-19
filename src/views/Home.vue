@@ -2,31 +2,38 @@
   <div class="home">
     <v-responsive>
     <div class="intro">
-       <div class="overlayHolder d-none d-lg-block">
-<v-row>
-          
-          <img class=" logo" src="@/assets/overlaySquare.png" />
-</v-row>
-          </div>
-      <div class="overlayMobile d-lg-none">
-          <img src="@/assets/luxorLogo.png" />
-      </div>
-</div>
-    </v-responsive>
-    <v-row>
-      <v-rol cols="16" sm="4">
-  <Info image="https://i.imgur.com/bhLZXMr.jpg" v-bind:content=intro_copy />
-      </v-rol>
-            <v-rol cols="16" sm="4">
-<Info image="https://i.imgur.com/Ecs9eZU.jpg" v-bind:content=middle_copy />
-      </v-rol>
-            <v-rol cols="16" sm="4">
-  <Info image='https://i.imgur.com/E7dBP6K.jpg' v-bind:content=close_copy> </Info>
-      </v-rol>
-
+    <div class="overlayHolder d-none d-lg-block">
+    <v-row>    
+      <img data-aos="fade-up" data-aos-duration="1000" class=" logo" src="@/assets/overlaySquare.png" />
     </v-row>
-                        <!-- </v-row> -->
-   <!-- </v-flex> -->
+    </div>
+    <div class="overlayMobile d-lg-none">
+        <img src="@/assets/luxorLogo.png" />
+    </div>
+
+    </div>
+    </v-responsive>
+
+    <v-parallax src="@/assets/bridge.jpg">
+    <v-row class="valueRow">
+      <v-col cols="12" sm="4">
+    <div data-aos="fade-left" data-aos-duration="1500" class="valueContainer">
+      {{values[0]}}
+      </div>
+      </v-col>
+      <v-col cols="12" sm="4">
+          <div data-aos="fade-up" data-aos-duration="1300" class="valueContainer">
+      {{values[1]}}
+      </div>
+      </v-col>
+      <v-col cols="12" sm="4">
+          <div data-aos="fade-right" data-aos-duration="1500" class="valueContainer">
+      {{values[2]}}
+      </div>
+      </v-col>
+    </v-row>
+    </v-parallax>
+<Info />
    <v-jumbotron color="primary" dark>
     <v-container fill-height>
       <v-layout align-center>
@@ -35,15 +42,23 @@
       align="center"
       justify="center"
     >
-          <h3 class="display-3">What We Do For You</h3>
-                        </v-row>
-                        <v-divider class="my-3"></v-divider>
-        </v-flex>
+    <h3 class="display-3">What We Do For You</h3>
+    </v-row>
+      <v-divider class="my-3"></v-divider>
+      </v-flex>
       </v-layout>
     </v-container>
   </v-jumbotron>
 <Timeline />
   <Case class="chartHolder" />
+  <v-parallax src="@/assets/pan.jpg">
+  <div data-aos="fade-right" data-aos-duration="1500" class="closeHolder d-none d-lg-block">
+    <p data-aos="fade-left" data-aos-duration="1500" class="closeCopy" >{{closeCopy}} </p>
+    </div>
+
+    <p data-aos="fade-left" data-aos-duration="1500" class="closeCopy d-lg-none" >{{closeCopy}} </p>
+
+  </v-parallax>
   </div>
 </template>
 
@@ -60,12 +75,18 @@ export default {
   },
   data(){
     return {
+
       slogan:"Upgrade to LED today and save 50-75% on your electric bill while improving the aesthetics and safety of your facility",
-      intro_copy:"Luxor Energy Solutions is a consulting and energy services firm that specializes in helping commercial, multifamily, and industrial buildings drastically reduce their energy cost and consumption.  Through lighting retrofits and efficiency audits we employ the latest innovative cutting edge technologies to dramatically improve light levels, safety, and environment all while helping your business become a leader in the Green economy.  The world is changing and new demands from government, the environment, and clients makes competing in the current business climate fraught with challenges....Luxor energy solutions shines the light so that you can lead the way.  We get big jobs done right.",
-      close_copy:"We pride ourselves on the products we deliver with over 95% coming from American owned companies.  While our aesthetic sensibilities are a significant asset, we demand durability along with quality, and our products are designed to last for at least a decade with a minimum of a 5 year guarantee.",
-      middle_copy: "Our unique process allows us to leverage utility rebates as well as federal and state programs in combination with a deep understanding of energy market and opportunities to provide clients with a customized energy efficiency upgrade with truly unparalleled return on investment.  The savings your business will accrue will be evident from the from the first utility bill after our upgrade and continue year after year.  These substantial savings that coincide with your lighting upgrade are often done with no out of pocket expense at all.",
-    fixtures: ["400 W Metal Halide","250 W Metal Halide", "2x4 Troffer",  "2x2 Troffer", "6-Lamp T5 High Bay",  "4-Lamp T5 High Bay", "6-Lamp T8 High Bay"],
-    reductions: [61,72,63,53,59,55,48]        
+      fixtures: ["400 W Metal Halide","250 W Metal Halide", "2x4 Troffer",  "2x2 Troffer", "6-Lamp T5 High Bay",  "4-Lamp T5 High Bay", "6-Lamp T8 High Bay"],
+      reductions: [61,72,63,53,59,55,48],
+      values:
+    [
+      'Manage your efficiency goals for LEDS lighting',
+      'Receive Objective advice and access to over 150 vendors to source the most cost-effective solutions for your enterprise.',
+      'Develop a custom buying strategy based on your needs.  Suppliers bid for your business.  You see the savings.'
+    ],
+    closeCopy:"Time is running out and the cost of energy is not going down soon. It's time to think about a more sustainable lighting solution. LED lighting offers superior visibility thanks to its white light and a safer technology with close to zero UV emission and no mercury. LED lighting is not only better for your eyes but also better for the environment."
+
     }
   },
   computed: {
@@ -79,7 +100,9 @@ export default {
 };
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 body{
+  font-family: 'Questrial', sans-serif
 }
 .chartHolder{
   margin: auto;
@@ -105,6 +128,34 @@ body{
   width: auto;
   object-fit: cover;
 }
+.valueContainer{
+  border: solid white 3px;
+  font-weight: bolder;
+  color:white;
+  align-content: center;
+  padding: 10px;
+  margin: auto;
+ height: 10em;
+ width: 15em;
+ font-family: 'Questrial', sans-serif;
+  max-width: 300px;
+}
+.valueRow{
+  margin-top: 8%;
+}
+.closeCopy{
+  color: white;
+  font-size: 1.5em;
+  padding: 10px;
+  border: solid 3px white;
+   font-family: 'Questrial', sans-serif;
+   font-weight: bolder;
+  }
+  .closeHolder{
+    max-width: 50%;
+    margin: auto;
+  }
+  
 
 </style>
 
