@@ -1,6 +1,6 @@
 <template>
   <v-app>
-      <v-app-bar
+      <!-- <v-app-bar
     v-scroll="onScroll"
     :color="!isScrolling ? 'white' : 'rgba(255, 255, 255, 0)'"
     :hide-on-scroll="$vuetify.breakpoint.smAndDown"
@@ -17,7 +17,8 @@
 
    </v-row>
 
-  </v-app-bar>
+  </v-app-bar> -->
+  <NavBar />
   <v-container class="topSpace" />
 
 <router-view></router-view>
@@ -34,11 +35,13 @@
 </template>
 
 <script>
-import Lower from "@/components/Lower"
+import Lower from "@/components/Lower";
+import NavBar from "@/components/NavBar.vue";
 export default {
   name: "App",
   components: {
-    Lower
+    Lower,
+    NavBar
   },
   data: () => ({
     //

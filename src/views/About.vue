@@ -35,14 +35,6 @@
           class="pa-0"
           cols="12"
         >
-          <!-- <v-avatar
-            class="profile"
-            color="grey"
-            size="164"
-            tile
-          >
-           
-          </v-avatar> -->
         </v-col>
         <v-col class="py-0">
           <v-list-item
