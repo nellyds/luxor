@@ -80,17 +80,9 @@
             'text': 'Home'
           },
           {
-            'to': '/services',
-            'text': 'Services'
+            'to': '/about',
+            'text': 'About'
           },
-          {
-            'to': '/projects',
-            'text': 'Projects'
-          },
-          {
-            'to': '/contact',
-            'text': 'Contact'
-          }
         ]
       }
     },

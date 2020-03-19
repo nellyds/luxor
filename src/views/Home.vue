@@ -18,19 +18,12 @@
   <Info image="https://i.imgur.com/bhLZXMr.jpg" v-bind:content=intro_copy />
       </v-rol>
             <v-rol cols="16" sm="4">
-  <Info image="https://i.imgur.com/bhLZXMr.jpg" v-bind:content=intro_copy />
+<Info image="https://i.imgur.com/Ecs9eZU.jpg" v-bind:content=middle_copy />
       </v-rol>
             <v-rol cols="16" sm="4">
-  <Info image="https://i.imgur.com/bhLZXMr.jpg" v-bind:content=intro_copy />
+  <Info image='https://i.imgur.com/E7dBP6K.jpg' v-bind:content=close_copy> </Info>
       </v-rol>
-            <v-rol cols="16" sm="4">
-  <Info image="https://i.imgur.com/bhLZXMr.jpg" v-bind:content=intro_copy />
-      </v-rol>
-            <v-rol cols="16" sm="4">
-  <Info image="https://i.imgur.com/bhLZXMr.jpg" v-bind:content=intro_copy />
-      </v-rol>
-  <!-- <Info image="https://i.imgur.com/Ecs9eZU.jpg" v-bind:content=middle_copy />
-   <Info image='https://i.imgur.com/E7dBP6K.jpg' v-bind:content=close_copy> </Info> -->
+
     </v-row>
                         <!-- </v-row> -->
    <!-- </v-flex> -->
