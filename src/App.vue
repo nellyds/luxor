@@ -10,7 +10,7 @@
         >
               <v-divider></v-divider>
           <v-card-text>
-      <span class="footerText"><a href="http://www.nelson-dsilva.com" >Nelson D'Silva &copy; 2020</a></span>
+      <span class="footerText"> Luxor Energy Solutions&copy; 2020.  Design by <a style="font-weight: bolder" href="http://www.nelson-dsilva.com" >Nelson D'Silva </a></span>
           </v-card-text>
     </v-footer>
   </v-app>
@@ -49,20 +49,18 @@ a{
 }
 a:visited{
   text-decoration: none;
+  color:white;
 
 }
 .footerText{
  
    text-decoration-color: white;
-
+  
   color: white;
-  text-decoration: none;
-
-
-
-
+    text-decoration: none;
 
 }
+
 .lowerDivide{
   min-width: 100%;
   min-height: 100px;

@@ -39,7 +39,7 @@
             active-class="black--text text--accent-4"
           >
             <v-list-item>
-              <router-link to="/about">About  </router-link>
+              <router-link to="/About">About  </router-link>
             </v-list-item>
   
             <v-list-item>
