@@ -81,9 +81,9 @@ export default {
       reductions: [61,72,63,53,59,55,48],
       values:
     [
-      'Manage your efficiency goals for LEDS lighting',
-      'Receive Objective advice and access to over 150 vendors to source the most cost-effective solutions for your enterprise.',
-      'Develop a custom buying strategy based on your needs.  Suppliers bid for your business.  You see the savings.'
+      'Manage your efficiency goals though LED retrofits',
+      'Receive objective advice and take access to dozens of vendors  to source the most cost-effective solutions for your enterprise.',
+      'Develop custom implementation strategies for maximum efficiency. Suppliers bid for your business.  You see the savings.'
     ],
     closeCopy:"Time is running out and the cost of energy is not going down soon. It's time to think about a more sustainable lighting solution. LED lighting offers superior visibility thanks to its white light and a safer technology with close to zero UV emission and no mercury. LED lighting is not only better for your eyes but also better for the environment."
 
@@ -109,8 +109,8 @@ body{
   width: 600px;
 }
 .overlayHolder{
-  height: 780px;
-  background-size: 780px;
+  height: 100vh;
+  background-size: contain;
   background-image: url('https://i.imgur.com/b7EtWSO.jpg');
     background-attachment: fixed;
   background-position-x: center;
@@ -124,8 +124,9 @@ body{
   background-size: 375px;
 }
 .logo{
-  height: auto;
+  height: 100vh;
   width: auto;
+
   object-fit: cover;
 }
 .valueContainer{
